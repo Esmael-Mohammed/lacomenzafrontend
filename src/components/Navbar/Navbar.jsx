@@ -29,6 +29,23 @@ const MenuLinks = [
     link: "/#blogs",
   },
 ];
+const dropDownLinks=[
+{
+  id:1,
+  name:"Trending Products",
+  link:"/#",
+},
+{
+  id:2,
+  name:"Best Selling",
+  link:"/#",
+},
+{
+  id:3,
+  name:"Top Rated",
+  link:"/#",
+},
+]
 const Navbar = () => {
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
@@ -58,13 +75,33 @@ const Navbar = () => {
                   </li>
                 ))}
                 {/* Dropdown */}
-                <li>
-                  <a href="#" className="">
+                <li className="relative cursor-pointer group">
+                  <a href="#" className="flex items-center gap-[2px] font-semibold text-gray-500
+                  dark:hover:text-white py-2">
                      Quick Links
-                     </a>
                      <span>
-                     <FaCaretDown />
+                     <FaCaretDown className="group-hover:rotate-180 duration-300"/>
                      </span>
+                     </a>
+                     {/* Dropdown links */}
+                     <div className="absolute z-[9999] hidden group-hover:block w-[200px] round *
+                     bg-white shadow-md dark:bg-gray-900 p-2 dark:text-white">
+                      <ul className="space-y-2">
+
+                      {
+                        dropDownLinks.map((data,index)=>(
+                          <li key={index}>
+                            <a 
+                            className="text-gray-500 dark:hover:text-white
+                            duration-200 inline-block w-full p-2 hover:bg-primary/20 rounded-md
+                            font-semibold"
+                            href={data.link}>{data.name}</a>
+                          </li>
+
+                        ))
+                      }
+                      </ul>
+                     </div>
                 </li>
               </ul>
             
@@ -77,7 +114,7 @@ const Navbar = () => {
                 <input type="text"
                 placeholder="Search" 
                 className="search-bar "/>
-                <IoMdSearch className='text-xl text-gray-600 group-hover:text-primary dark:text-gray-400 absolute top-1/2 -translate-y-1/2 right-3 duration-200'/>
+                <IoMdSearch className='text-xl text-gray-600 group-hover:text-primary dark:text-gray-400 absolute top-1/2 -translate-y-1/2 right-3 duration-700'/>
             </div>
             {/* order-button section  */}
             <button className="relative p-3">
