@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import "slick-carousel/slick/slick.css";
@@ -42,13 +42,13 @@ const BannerData2 = {
   bgColor: "#2dcc6f",
 };
 const App=()=>{
-  const [orderPopup, setOrderPopup] = useState(true);
+  const [orderPopup, setOrderPopup] = useState(false);
 
   const handleOrderPopup = () => {
     setOrderPopup(!orderPopup);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 800,
       easing: "ease-in-sine",
@@ -70,8 +70,8 @@ const App=()=>{
       <News/>
       <Partners/>
       <Footer/>
-      {/* <Popup orderPopup={orderPopup}
-      setOrderPopup={setOrderPopup}/> */}
+      <Popup orderPopup={orderPopup}
+      handleOrderPopup={handleOrderPopup}/>
 
     </div>
   )
