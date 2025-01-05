@@ -58,7 +58,7 @@ const Navbar = () => {
               className="text-primary font-semibold
                     tracking-widest text-2xl uppercase sm:text-3xl"
             >
-              e-Lacomenza
+              Lacomenza
             </a>
             {/* Menu Items */}
             <div className="hidden lg:block">

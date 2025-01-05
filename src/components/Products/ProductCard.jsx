@@ -9,10 +9,11 @@ const ProductCard = ({data}) => {
             {
                 data.map((data)=>(
                     <div className="group" key={data.id}>
-                        <div className='relative'>
+                        <div className='relative space-y-3'>
                             <img src={data.img} alt="" 
                             className='h-[180px] w-[260px] object-cover rounded-md'/>
-                        <div className='absolute top-1/2 right-0 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full text-center group-hover:backdrop-blur-sm'>
+                        <div className=' hidden group-hover:flex absolute top-1/2 right-0 -translate-y-1/2 left-1/2 -translate-x-1/2 h-full w-full text-center group-hover:backdrop-blur-sm
+                        justify-center items-center duration-200'>
                             {/* hover buton */}
                             <Button 
                             text={"Add to cart"}
@@ -22,7 +23,7 @@ const ProductCard = ({data}) => {
                         </div>
                         <div className='leading-7'>
                             <h2 className='font-semibold'>{data.title}</h2>
-                            <h2 className='font-bold'>Birr{data.price}</h2>
+                            <h2 className='font-bold'>Birr:{data.price}</h2>
                         </div>
                     </div>
                 ))

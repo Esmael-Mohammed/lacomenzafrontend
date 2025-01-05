@@ -14,7 +14,7 @@ const serviceData = [
   {
     id: 2,
     icon: <GiBrickWall className="text-4xl md:text-5xl text-primary" />,
-    title: "construction",
+    title: "Construction",
     description: "Constraction consultancy",
   },
   {
