@@ -30,7 +30,7 @@ const heroData=[
         
     },
 ]
-const Hero = () => {
+const Hero = ({handleOrderPopup}) => {
     const settings = {
         dots: true,
         infinite: true,
@@ -72,7 +72,9 @@ const Hero = () => {
                                 <Button 
                                 text="Shop Now"
                                 bgColor="bg-primary"
-                                textColor="text-white"/>
+                                textColor="text-white"
+                                handleOrderPopup={handleOrderPopup}
+                                />
                             </div>
                         </div>
 

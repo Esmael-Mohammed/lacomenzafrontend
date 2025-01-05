@@ -2,6 +2,7 @@ import React from "react";
 import { FaCaretDown, FaCartShopping } from "react-icons/fa6";;
 import { IoMdSearch } from "react-icons/io";
 import DarkMode from "./DarkMode";
+import { MdAccountCircle } from "react-icons/md";
 const MenuLinks = [
   {
     id: 1,
@@ -46,7 +47,7 @@ const dropDownLinks=[
   link:"/#",
 },
 ]
-const Navbar = () => {
+const Navbar = ({handleOrderPopup}) => {
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
       <div className="py-4">
@@ -117,11 +118,14 @@ const Navbar = () => {
                 <IoMdSearch className='text-xl text-gray-600 group-hover:text-primary dark:text-gray-400 absolute top-1/2 -translate-y-1/2 right-3 duration-700'/>
             </div>
             {/* order-button section  */}
-            <button className="relative p-3">
+            <button className="relative p-3" onClick={handleOrderPopup}>
               <FaCartShopping className="text-xl text-gray-600 dark:text-gray-400"/>
               <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs">3</div>
               </button>
             {/*Dark Mode section */}
+            <div>
+            <MdAccountCircle className="text-xl text-gray-600 dark:text-gray-400 cursor-pointer"/>
+            </div>
             <div>
               <DarkMode/>
             </div>

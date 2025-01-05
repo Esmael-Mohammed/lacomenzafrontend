@@ -12,14 +12,14 @@ const newsData = [
       image:Img1,
   },
   {
-    title: "Technology",
+    title: "Technology1",
     subtitle:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsam, reprehenderit quam molestias quo sit esse est? Fugit dolor consectetur ut neque maxime rem? Repudiandae eos autem modi quibusdam excepturi?",
       published:"Jan 10,2025 by Mr.x",
       image:Img2,
   },
   {
-    title: "Technology",
+    title: "Technology2",
     subtitle:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsam, reprehenderit quam molestias quo sit esse est? Fugit dolor consectetur ut neque maxime rem? Repudiandae eos autem modi quibusdam excepturi?",
       published:"Jan 10,2025 by Mr.x",
