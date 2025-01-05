@@ -35,8 +35,8 @@ const News = () => {
         {/* news section  */}
         <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-3 gap-6 gap-y-8 sm:gap-4 md:gap-7">
             {
-                newsData.map((data)=>(
-                    <div key={data.title} className="bg-white dark:bg-gray-900">
+                newsData.map((data,index)=>(
+                    <div key={index} className="bg-white dark:bg-gray-900">
                         {/* img section  */}
                         <div className="overflow-hidden rounded-2xl mb-2">
                             <img src={data.image} alt="" className="w-full h-[220px] object-cover rounded-2xl hover:scale-150 duration-500"/>

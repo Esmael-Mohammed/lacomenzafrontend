@@ -17,7 +17,6 @@ import Popup from "./components/Popup/Popup";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
 const BannerData = {
   discount: "30% OFF",
   title: "Fine Smile",
@@ -41,7 +40,8 @@ const BannerData2 = {
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis",
   bgColor: "#2dcc6f",
 };
-const App=()=>{
+
+const App = () => {
   const [orderPopup, setOrderPopup] = useState(false);
 
   const handleOrderPopup = () => {
@@ -57,23 +57,24 @@ const App=()=>{
     });
     AOS.refresh();
   }, []);
-  return(
-    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
-      <Navbar handleOrderPopup={handleOrderPopup}/>
-      <Hero handleOrderPopup={handleOrderPopup}/>
-      <Category/>
-      <Category2/>
-      <Services/>
-      <Banner data={BannerData}/>
-      <Products/>
-      <Banner data={BannerData2}/>
-      <News/>
-      <Partners/>
-      <Footer/>
-      <Popup orderPopup={orderPopup}
-      handleOrderPopup={handleOrderPopup}/>
+  
 
+  return (
+    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
+      <Navbar handleOrderPopup={handleOrderPopup} />
+      <Hero handleOrderPopup={handleOrderPopup} />
+      <Category />
+      <Category2 />
+      <Services />
+      <Banner data={BannerData} />
+      <Products />
+      <Banner data={BannerData2} />
+      <News />
+      <Partners />
+      <Footer />
+      {/* <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} /> */}
     </div>
-  )
-}
-export default App
+  );
+};
+
+export default App;
