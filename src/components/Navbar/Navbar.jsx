@@ -11,23 +11,24 @@ const MenuLinks = [
   },
   {
     id: 2,
-    name: "Shop",
-    link: "/#shop",
+    name: "Product",
+    link: "/#product",
   },
   {
     id: 3,
-    name: "Products",
-    link: "/#products",
+    name: "News",
+    link: "/#news",
   },
+ 
   {
     id: 4,
-    name: "About",
+    name: "About Us",
     link: "/#about",
   },
   {
     id: 5,
-    name: "Blogs",
-    link: "/#blogs",
+    name: "Contact Us",
+    link: "/#contact",
   },
 ];
 const dropDownLinks=[
@@ -46,6 +47,21 @@ const dropDownLinks=[
   name:"Top Rated",
   link:"/#",
 },
+{
+  id:4,
+  name:"Service",
+  link:"/#",
+},
+{
+  id:5,
+  name:"CSR",
+  link:"/#",
+},
+{
+  id:5,
+  name:"Entertainment",
+  link:"/#",
+},
 ]
 const Navbar = ({handleOrderPopup}) => {
   return (
@@ -59,7 +75,7 @@ const Navbar = ({handleOrderPopup}) => {
               className="text-primary font-semibold
                     tracking-widest text-2xl uppercase sm:text-3xl"
             >
-              Lacomenza
+              Lakomenza
             </a>
             {/* Menu Items */}
             <div className="hidden lg:block">

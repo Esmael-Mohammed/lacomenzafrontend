@@ -1,7 +1,7 @@
 import React from 'react'
-import Image1 from '../../assets/category/earphone.png';
-import Image2 from '../../assets/category/watch.png';
-import Image3 from '../../assets/category/macbook.png'
+import Image1 from '../../assets/category/a.png';
+import Image2 from '../../assets/category/c.png';
+import Image3 from '../../assets/category/b.png'
 import Button from '../Shared/Button';
 
 const Category = () => {
@@ -18,7 +18,7 @@ const Category = () => {
                         <div className='mb-4'>
                             <p className='mb-[2px] text-gray-400'>Enjoy</p>
                             <p className='text-2xl font-semibold mb-[2px]'>With</p>
-                            <p className='text-4xl xl:text-5xl font-bold opacity-20 mb-2'>Earphone</p>
+                            <p className='text-4xl xl:text-5xl font-bold opacity-20 mb-2'>Fruits</p>
                             <Button
                             text="Browse"
                             bgColor={"bg-primary"}
@@ -37,7 +37,7 @@ const Category = () => {
                         <div className='mb-4'>
                             <p className='mb-[2px] text-white'>Enjoy</p>
                             <p className='text-2xl font-semibold mb-[2px]'>With</p>
-                            <p className='text-4xl xl:text-5xl font-bold opacity-40 mb-2'>Gadget</p>
+                            <p className='text-4xl xl:text-5xl font-bold opacity-40 mb-2'>Banana</p>
                             <Button
                             text="Browse"
                             bgColor={"bg-white"}
@@ -56,7 +56,7 @@ const Category = () => {
                         <div className='mb-4'>
                             <p className='mb-[2px] text-white'>Enjoy</p>
                             <p className='text-2xl font-semibold mb-[2px]'>With</p>
-                            <p className='text-4xl xl:text-5xl font-bold opacity-40 mb-2'>Laptop</p>
+                            <p className='text-4xl xl:text-5xl font-bold opacity-40 mb-2'>Organic Meat</p>
                             <Button
                             text="Browse"
                             bgColor={"bg-white"}

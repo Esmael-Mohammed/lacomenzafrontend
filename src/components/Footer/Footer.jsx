@@ -1,31 +1,27 @@
 import React from 'react'
-import { CiInstagram, CiLocationOn } from 'react-icons/ci'
+import { CiInstagram, CiLocationOn, CiMail } from 'react-icons/ci'
 import { FaFacebookF, FaLinkedin } from 'react-icons/fa6'
 import { RxMobile } from 'react-icons/rx'
 const footerLinks=[
     {
         id: 1,
-        name: "Home",
+        name: "About us",
         link: "/#",
       },
+     
       {
         id: 2,
-        name: "Shop",
-        link: "/#shop",
-      },
-      {
-        id: 3,
-        name: "Products",
+        name: "Product",
         link: "/#products",
       },
       {
         id: 4,
-        name: "About",
+        name: "Services",
         link: "/#about",
       },
       {
         id: 5,
-        name: "Blogs",
+        name: "News",
         link: "/#blogs",
       },
 ]
@@ -41,7 +37,7 @@ const Footer = () => {
               className="text-primary font-semibold
                     tracking-widest text-2xl uppercase sm:text-3xl"
             >
-              Lacomenza
+              Lakomenza
             </a>
             <p className='text-gray-600 dark:text-white/70 lg:pr-24 pt-3'>Lorem ipsum dolor, sit consectetur adipisicing .
                 sit amet consectetur adipisicing elit </p>
@@ -81,15 +77,19 @@ const Footer = () => {
                     </div>
                     {/* Company Address */}
                     <div className='py-8 px-4 col-span-2 sm:col-auto'>
-                    <h1 className='text-xl font-bold sm:text-left mb-3'>Address</h1>
+                    <h1 className='text-xl font-bold sm:text-left mb-3'>Contact Us</h1>
                         <div>
                             <div className="flex items-center gap-3 ">
                             <CiLocationOn />
                             <p>Dessie,Ethiopia</p>
                             </div>
-                            <div className="flex items-center gap-3 mt-6">
+                            <div className="flex items-center gap-3 ">
+                            <CiMail />
+                            <p>info@lakomenza.et</p>
+                            </div>
+                            <div className="flex items-center gap-3">
                             <RxMobile />
-                            <p>+25100000000</p>
+                            <p>+251-333-11-52-04</p>
                             </div>
                         </div>
 

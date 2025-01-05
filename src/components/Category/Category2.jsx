@@ -1,6 +1,6 @@
 import React from 'react'
-import Image1 from '../../assets/category/gaming.png';
-import Image2 from '../../assets/category/vr.png';
+import Image1 from '../../assets/category/a.png';
+import Image2 from '../../assets/category/v.png';
 import Image3 from '../../assets/category/speaker.png'
 import Button from '../Shared/Button';
 
@@ -18,7 +18,7 @@ const Category = () => {
                         <div className='mb-4'>
                             <p className='mb-[2px] text-white'>Enjoy</p>
                             <p className='text-2xl font-semibold mb-[2px]'>With</p>
-                            <p className='text-4xl xl:text-5xl font-bold opacity-40 mb-2'>Laptop</p>
+                            <p className='text-4xl xl:text-5xl font-bold opacity-40 mb-2'>Furits</p>
                             <Button
                             text="Browse"
                             bgColor={"bg-primary"}
@@ -36,7 +36,7 @@ const Category = () => {
                         <div className='mb-4'>
                             <p className='mb-[2px] text-white'>Enjoy</p>
                             <p className='text-2xl font-semibold mb-[2px]'>With</p>
-                            <p className='text-4xl xl:text-5xl font-bold opacity-20 mb-2'>Earphone</p>
+                            <p className='text-4xl xl:text-5xl font-bold opacity-20 mb-2'>vegetables</p>
                             <Button
                             text="Browse"
                             bgColor={"bg-white"}
@@ -54,7 +54,7 @@ const Category = () => {
                         <div className='mb-4'>
                             <p className='mb-[2px] text-white'>Enjoy</p>
                             <p className='text-2xl font-semibold mb-[2px]'>With</p>
-                            <p className='text-4xl xl:text-5xl font-bold opacity-40 mb-2'>Gadget</p>
+                            <p className='text-4xl xl:text-5xl font-bold opacity-40 mb-2'>Furits</p>
                             <Button
                             text="Browse"
                             bgColor={"bg-white"}
