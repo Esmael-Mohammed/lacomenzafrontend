@@ -9,6 +9,7 @@ import Services from "./components/Services/Services";
 import Banner from "./components/Banner/Banner";
 import headphone from "./assets/hero/headphone.png";
 import smartwatch2 from "./assets/category/smartwatch2-removebg-preview.png";
+import Products from "./components/Products/Products";
 
 
 const BannerData = {
@@ -43,6 +44,7 @@ const App=()=>{
       <Category2/>
       <Services/>
       <Banner data={BannerData}/>
+      <Products/>
     </div>
   )
 }

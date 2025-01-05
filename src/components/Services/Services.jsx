@@ -2,6 +2,7 @@ import React from "react";
 import {FaHouseDamage, FaWallet } from "react-icons/fa";
 import { FaCarSide } from "react-icons/fa6";
 import { GiBrickWall } from "react-icons/gi";
+import Heading from "../Shared/Heading";
 
 const serviceData = [
   {
@@ -36,6 +37,7 @@ const serviceData = [
 const Services = () => {
   return (
     <div>
+      <Heading title={"Our Services"}/>
         <div className="container my-14 md:my-20"> 
         <div className="grid grid-cols-2 lg:grid-cols-4  gap-4 gap-y-8">
             
