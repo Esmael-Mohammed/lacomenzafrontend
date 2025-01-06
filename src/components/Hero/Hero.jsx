@@ -1,6 +1,6 @@
 import React from 'react'
 import Slider from "react-slick";
-import Image1 from '../../assets/category/f.png';
+import Image1 from '../../assets/category/bu.png';
 import Image2 from '../../assets/category/v.png';
 import Image3 from '../../assets/category/m.png'
 import Button from '../Shared/Button';
@@ -9,9 +9,9 @@ const heroData=[
     {
         id:1,
         img:Image1,
-        subtitle:"Organic",
-        title:"vegetables",
-        title2:"Onion",
+        subtitle:"Apartmant",
+        title:"Buliding",
+        title2:"VilaHouse",
     },
     {
         id:2,
@@ -37,7 +37,7 @@ const Hero = ({handleOrderPopup}) => {
         arrows:false,
         cssEase:"ease-in-out",
         speed: 800,
-        // autoplay:true,
+        autoplay:true,
         slidesToShow: 1,
         slidesToScroll: 1,
         pauseOnHover:false,

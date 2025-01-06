@@ -1,7 +1,7 @@
 import React from 'react'
-import Image1 from '../../assets/category/a.png';
+import Image1 from '../../assets/category/cw.png';
 import Image2 from '../../assets/category/v.png';
-import Image3 from '../../assets/category/speaker.png'
+import Image3 from '../../assets/category/ca.png'
 import Button from '../Shared/Button';
 
 const Category = () => {
@@ -18,7 +18,7 @@ const Category = () => {
                         <div className='mb-4'>
                             <p className='mb-[2px] text-white'>Enjoy</p>
                             <p className='text-2xl font-semibold mb-[2px]'>With</p>
-                            <p className='text-4xl xl:text-5xl font-bold opacity-40 mb-2'>Furits</p>
+                            <p className='text-4xl xl:text-5xl font-bold opacity-40 mb-2'>Organic Milk</p>
                             <Button
                             text="Browse"
                             bgColor={"bg-primary"}
@@ -54,7 +54,7 @@ const Category = () => {
                         <div className='mb-4'>
                             <p className='mb-[2px] text-white'>Enjoy</p>
                             <p className='text-2xl font-semibold mb-[2px]'>With</p>
-                            <p className='text-4xl xl:text-5xl font-bold opacity-40 mb-2'>Furits</p>
+                            <p className='text-4xl xl:text-5xl font-bold opacity-40 mb-2'>Cars</p>
                             <Button
                             text="Browse"
                             bgColor={"bg-white"}
