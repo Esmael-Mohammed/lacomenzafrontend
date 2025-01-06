@@ -16,6 +16,7 @@ import Footer from "./components/Footer/Footer";
 import Popup from "./components/Popup/Popup";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import AIChatSupport from "./components/Chatbot/AIChatSupport";
 
 const BannerData = {
   discount: "30% OFF",
@@ -72,6 +73,7 @@ const App = () => {
       <News />
       <Partners />
       <Footer />
+      <AIChatSupport/>
       {/* <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} /> */}
     </div>
   );
