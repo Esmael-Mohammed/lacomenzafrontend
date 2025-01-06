@@ -52,7 +52,7 @@ const AIChatSupport = () => {
         >
           {/* Header */}
           <div className="bg-primary text-white p-3 font-semibold">
-            AI Chat Support
+            Custmore Support
             <button
               onClick={toggleChat}
               className="float-right bg-transparent text-white font-bold text-xl focus:outline-none"
